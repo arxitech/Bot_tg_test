@@ -1,3 +1,4 @@
+const { triggerAsyncId } = require('async_hooks');
 const TelegramBot = require('node-telegram-bot-api');
 
 const token = '5613723564:AAFuNhruwmZvAnlWB7TKhbe59wNr5sGT-c8';
@@ -13,5 +14,3 @@ bot.on('message', msg => {
         bot.sendMessage(id, `привет ${userName}`);
     }
 });
-
-bh
